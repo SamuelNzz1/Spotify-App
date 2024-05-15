@@ -30,7 +30,7 @@ export default function Tabs() {
                     <SvgXml xml={focused ? HomeSelected : HomeUnselected} />
                     ),
                     tabBarLabelStyle: {
-                      fontSize: RF(15), // Tamanho do texto
+                      fontSize: RF(13), // Tamanho do texto
                       position: "absolute",
                       bottom: 5,
                       color:  "white"
@@ -49,7 +49,7 @@ export default function Tabs() {
                     <SvgXml xml={focused ? SearchSelected : SearchUnselected} />
                     ),
                     tabBarLabelStyle: {
-                      fontSize:RF(15), // Tamanho do texto
+                      fontSize: RF(13),  // Tamanho do texto
                       position: "absolute",
                       bottom: 5,
                       color:  "white"
@@ -67,7 +67,7 @@ export default function Tabs() {
                     <SvgXml xml={focused ? LibrarySelected : LibraryUnselected} />
                     ),
                     tabBarLabelStyle: {
-                      fontSize: RF(15), // Tamanho do texto
+                      fontSize: RF(13), // Tamanho do texto
                       position: "absolute",
                       bottom: 5,
                       color:  "white"

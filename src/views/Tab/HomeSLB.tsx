@@ -2,6 +2,7 @@ import React from "react";
 import { ImageBackground, ScrollView, StyleSheet, View } from "react-native";
 import { WelcomeConfig } from "../../components/WelcomeConfigSLB";
 import { OptionsSounds } from "../../components/OptionsSoundsComponents/OptionsSoundsSLB";
+import { EpisodeFYou } from "../../components/EpisodeFYouSLB";
 
 type HomeProps = {
 navigation : any;
@@ -24,6 +25,9 @@ export const Home :  React.FC<HomeProps> = ({navigation}) => {
                 />
                 <OptionsSounds
                   stylesss = {styles.p}
+                />
+                <EpisodeFYou 
+                    stylesss={styles.p}
                 />
 
                 

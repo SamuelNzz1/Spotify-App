@@ -27,7 +27,7 @@ export const WelcomeConfig: React.FC <ConfigProps> = ({navigation, styless}) => 
 
                         <TouchableOpacity 
                             key = {index}
-                            onPress={index === 2 ? () => navigation.navigate("config") : undefined}
+                            onPress={index === 2 ? () => navigation.navigate("Config") : undefined}
                         >
                             
                             <SvgXml xml={item.svg}  />

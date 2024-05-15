@@ -9,6 +9,8 @@ import { Home } from "../views/Tab/HomeSLB";
 import { Search } from "../views/Tab/SearchSLB";
 import { Library } from "../views/Tab/LibrarySLB";
 
+import StackRoutes from "./stack.routes";
+
 const Tab : any = createBottomTabNavigator();
 export default function Tabs() {
     return (
@@ -23,7 +25,7 @@ export default function Tabs() {
         }}>
             <Tab.Screen 
                 name="Início" 
-                component={Home}
+                component={StackRoutes}
                 options={({ route }: any) => ({
                     
                     tabBarIcon: ({ focused } : any) => (

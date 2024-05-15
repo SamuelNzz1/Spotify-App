@@ -8,7 +8,7 @@ export default function Routes(){
  return(
     <NavigationContainer>
       <>
-         <Tabs></Tabs>
+        <Tabs></Tabs>
        </>
     </NavigationContainer>
  ) 

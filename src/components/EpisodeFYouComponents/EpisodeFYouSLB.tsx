@@ -1,6 +1,8 @@
 import React from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { RFValue as RF } from "react-native-responsive-fontsize";
+import { EpisodeButton } from "./EpisodeButton";
+import { OptionsEP } from "../../data/OptionsEp";
 type EpisodesProps = {
  stylesss? : any
     
@@ -20,7 +22,17 @@ export const EpisodeFYou : React.FC<EpisodesProps> = ({stylesss}) => {
                 showsHorizontalScrollIndicator = {false}
                 horizontal
             >
-
+                 {
+                OptionsEP.map((item, index) => {
+                return (
+                    <EpisodeButton
+                        key={index}
+                        titulo={item.titulo} 
+                        imageCap={item.imageCap}    
+                    />
+                )   
+            })
+        }
             </ScrollView>
         </View>
     )
@@ -30,12 +42,12 @@ export const EpisodeFYou : React.FC<EpisodesProps> = ({stylesss}) => {
 const styles = StyleSheet.create({
     boxEpFYou: {
         width: "100%",
-        height: "30%",
-       
-        gap: 20
+        height: "35%",
+        gap: 20,
+
     },
     scrollEps: {
-        width: 1000,
+        width: "auto",
         height: "90%",
         gap: 50, 
         paddingRight: 10

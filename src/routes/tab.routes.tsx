@@ -19,7 +19,7 @@ export default function Tabs() {
           headerShown: false, 
           tabBarStyle: {
             backgroundColor:  '#121212',
-            height: "10%",
+            height: "15%",
             borderTopColor: "transparent"
           }, 
         }}>

@@ -19,5 +19,14 @@ export const OptionsEP : OptionsEp[] = [
         titulo: "Sua mixtape semanal de músicas novas. Desfrute de novas músicas",
         imageCap: 'Discover'
     },
+    {
+        titulo: "Numb Little Bug",
+        imageCap: 'EpFYou2',
+
+    },
+    {
+        titulo: "Evering Road (Deluxe)",
+        imageCap: 'EpFYou3',
+    }
 
 ]

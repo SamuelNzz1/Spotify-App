@@ -1,8 +1,8 @@
 import React from "react";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import { Configs } from "../views/Stack/ConfigSLB";
+import { Configs } from "../views/Stack/ConfigSBLM";
 import Tabs from "./tab.routes";
-import { Home } from "../views/Tab/HomeSLB";
+import { Home } from "../views/Tab/HomeSBLM";
 const Stack : any= createNativeStackNavigator();
 
 export default function StackRoutes(){

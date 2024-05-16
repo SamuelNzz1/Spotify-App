@@ -5,9 +5,9 @@ import { RFValue as RF } from "react-native-responsive-fontsize";
 
 import { HomeSelected, HomeUnselected, SearchSelected, SearchUnselected, LibrarySelected, LibraryUnselected } from "../svgs/iconsTab";
 
-import { Home } from "../views/Tab/HomeSLB";
-import { Search } from "../views/Tab/SearchSLB";
-import { Library } from "../views/Tab/LibrarySLB";
+import { Home } from "../views/Tab/HomeSBLM";
+import { Search } from "../views/Tab/SearchSBLM";
+import { Library } from "../views/Tab/LibrarySBLM";
 
 import StackRoutes from "./stack.routes";
 

@@ -1,7 +1,7 @@
 import React from "react";
-import { TopConfig } from "../../components/ConfigViewComponents/TopConfig";
+import { TopConfig } from "../../components/ConfigViewComponents/TopConfigSBLM";
 import { ScrollView, View } from "react-native";
-import { ProfileButton } from "../../components/ConfigViewComponents/ProfileButton";
+import { ProfileButton } from "../../components/ConfigViewComponents/ProfileButtonSBLM";
 type ConfigProps = {
     navigation: any
 }

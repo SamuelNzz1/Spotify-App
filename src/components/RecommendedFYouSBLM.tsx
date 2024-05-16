@@ -1,7 +1,7 @@
 import React from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { OptionsEP } from "../data/OptionsEp";
-import { EpisodeButton } from "./EpisodeFYouComponents/EpisodeButton";
+import { EpisodeButton } from "./EpisodeFYouComponents/EpisodeButtonSBLM";
 import { RFValue as RF } from "react-native-responsive-fontsize";
 type RecommendedProps = {
     stylesss? : any

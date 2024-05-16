@@ -1,6 +1,6 @@
 import React from "react"
 import { StyleSheet, View } from "react-native"
-import { OptionsButtons } from "./OptionsButtonSLBM"
+import { OptionsButtons } from "./OptionsButtonSBLM"
 import { OptionsPlay } from "../../data/OptionsPlay"
 type OptionsSProps = {
 stylesss?: any,

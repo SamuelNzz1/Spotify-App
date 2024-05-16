@@ -1,9 +1,9 @@
 import React from "react";
 import { ImageBackground, ScrollView, StyleSheet, View } from "react-native";
-import { WelcomeConfig } from "../../components/WelcomeConfigSLB";
-import { OptionsSounds } from "../../components/OptionsSoundsComponents/OptionsSoundsSLB";
-import { EpisodeFYou } from "../../components/EpisodeFYouComponents/EpisodeFYouSLB";
-import { RecommendedFYou } from "../../components/RecommendedFYouSLB";
+import { WelcomeConfig } from "../../components/WelcomeConfigSBLM";
+import { OptionsSounds } from "../../components/OptionsSoundsComponents/OptionsSoundsSBLM";
+import { EpisodeFYou } from "../../components/EpisodeFYouComponents/EpisodeFYouSBLM";
+import { RecommendedFYou } from "../../components/RecommendedFYouSBLM";
 
 type HomeProps = {
 navigation : any;

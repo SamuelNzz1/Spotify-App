@@ -1,7 +1,9 @@
 import React from "react";
 import { TopConfig } from "../../components/ConfigViewComponents/TopConfigSBLM";
-import { ScrollView, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 import { ProfileButton } from "../../components/ConfigViewComponents/ProfileButtonSBLM";
+import { UsuConfig } from "../../data/UsuConfigOptions";
+import { OptionsSettingsButtons } from "../../components/ConfigViewComponents/OptionsSettingsButtonsSBLM";
 type ConfigProps = {
     navigation: any
 }
@@ -13,11 +15,26 @@ export const Configs : React.FC<ConfigProps> = ({navigation}) => {
         />
         <ScrollView
             showsVerticalScrollIndicator = {false}
-            contentContainerStyle = {{width: "100%", height: "100%", paddingBottom: 20}}
+            contentContainerStyle = {{width: "100%", height: "auto", paddingBottom: 40, paddingHorizontal: 15, gap: 30}}
         >
             <ProfileButton 
                 navigation={navigation}
             />
+            <View
+                style = {styles.ButtonsBox}
+            >
+                {
+                    UsuConfig.map( (item, index) => {
+                        return(
+                            <OptionsSettingsButtons 
+                                key = {index}
+                                text={item.title}
+                            />
+                        )
+                    })
+                }
+            </View>
+
 
         </ScrollView>
 
@@ -25,3 +42,9 @@ export const Configs : React.FC<ConfigProps> = ({navigation}) => {
  
  )
 }
+const styles = StyleSheet.create({
+    ButtonsBox: {
+        alignItems: "center",
+        gap: 15
+    }
+})

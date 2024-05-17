@@ -15,6 +15,7 @@ export const ProfileButton: React.FC<ProfileProps> = ({navigation}) => {
     return (
     <TouchableOpacity
         style = {styles.profileButton}
+        onPress = {() => navigation.navigate("Profile")}
     >
         <View 
             style = {styles.leftBox}

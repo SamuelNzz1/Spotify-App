@@ -13,25 +13,33 @@ export const imageMapping : any = {
 type Options = {
  name: string,
  imageCap: string,
+ artist?: boolean,
+ option?: string,
+
 }
 
 
 export const OptionsPlay : Options[] = [
     {
         name: "Músicas Curtidas",
-        imageCap: 'LikedSongs'
+        imageCap: 'LikedSongs',
+        option: "Playlist"
     },
     {
-        name: "Augustten Ft Jhesy 😇",
-        imageCap: 'Augustten'
+        name: "Augustten",
+        imageCap: 'Augustten',
+        artist: true,
+        option: "Artista"
     },
     {
         name: "Emotional Songs",
-        imageCap: 'Emotional'
+        imageCap: 'Emotional',
+        option: "Playlist"
     },
     {
         name: "A Place We Know",
-        imageCap: 'Place'
+        imageCap: 'Place',
+        option: "Música"
     }
 
 ]

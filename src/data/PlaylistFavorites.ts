@@ -2,18 +2,18 @@ import Shazam from "../../assets/Shazam.png";
 import Roadtrip from "../../assets/Roadtrip.png";
 import Study from "../../assets/Study.png";
 
-export const ImageMapping = {
+export const imageMapping : any = {
     Shazam: Shazam,
     Roadtrip: Roadtrip,
     Study: Study,
 }
 type Playlists = {
-    imageCap: any,
+    imageCap?: any,
     name: string,
     likes: number,
 }
 
-export const Playlists : Playlists[] = [
+export const PlaylistssOptions : Playlists[] = [
     {
         name: "Shazam",
         imageCap: 'Shazam',
@@ -24,6 +24,11 @@ export const Playlists : Playlists[] = [
         likes: 5,
     },{
         name: "Study",
+        imageCap:'Study',
+        likes: 1,
+    },
+    {
+        name: "See all playlists",
         imageCap:'Study',
         likes: 1,
     }

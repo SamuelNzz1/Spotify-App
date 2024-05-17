@@ -17,7 +17,7 @@ export const Profile : React.FC <ProfileProps> = ({navigation}) => {
     >
         <View
        
-        style = {{width: "100%", height: "50%", alignItems: "center", justifyContent: "center", backgroundColor: "#766269"}}
+        style = {{width: "100%", height: "35%", alignItems: "center", justifyContent: "center", backgroundColor: "#766269"}}
     
         >
             <TouchableOpacity
@@ -35,12 +35,12 @@ export const Profile : React.FC <ProfileProps> = ({navigation}) => {
 
         </View>
         <View
-            style = {{height: "50%", width: "100%"}}
+            style = {{height: "60%", width: "100%"}}
         >
             <View
                 style = {{flexDirection: "row", width: "100%", justifyContent: "space-between", paddingHorizontal: 20}}
             >
-                <View
+                <TouchableOpacity
                     style = {[styles.status]}
                 >   
                     <Text
@@ -54,8 +54,8 @@ export const Profile : React.FC <ProfileProps> = ({navigation}) => {
                         SEGUIDORES
                     </Text>
 
-                </View>
-                <View
+                </TouchableOpacity>
+                <TouchableOpacity
                      style = {[styles.status]}
                 >
                         <Text
@@ -69,7 +69,7 @@ export const Profile : React.FC <ProfileProps> = ({navigation}) => {
                             SEGUINDO
                         </Text>
 
-                </View>
+                </TouchableOpacity>
             </View>
             <Playlists 
             
